@@ -30,5 +30,8 @@
       "test",
       "src/isSymbol.js"
     ]
+  },
+  "dependencies": {
+    "c8": "^8.0.1"
   }
 }
