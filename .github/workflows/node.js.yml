@@ -27,12 +27,12 @@ jobs:
     - name: Run tests
       run: npm test
       id: tests
-      continue-on-error: true
     - name: Run coverage
       if: always()
       id: coverage
       run: npm run coverage
     - name: Upload coverage to Coveralls
+      if: always()
       uses: coverallsapp/github-action@v2.2.3
 
 
