@@ -5,10 +5,30 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no tests are implemented yet \" && exit 1"
+    "test": "mocha",
+    "coverage": "c8 npm test"
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "coveralls": "^3.1.1",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3"
+  },
+  "mocha": {
+    "reporter": "mochawesome"
+  },
+  "c8": {
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "exclude": [
+      "node_modules",
+      "src/.internal",
+      "test",
+      "src/isSymbol.js"
+    ]
+  }
 }
