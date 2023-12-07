@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/iiroink/e-commerce-test-asset/badge.svg?branch=main)](https://coveralls.io/github/iiroink/e-commerce-test-asset?branch=main)
+
 # Student template
 
 ## Purpose of this repository
