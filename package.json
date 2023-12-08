@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "coverage": "c8 npm test"
+    "coverage": "c8 mocha --file src/*.js test/*.test.js"
   },
   "author": "",
   "license": "MIT",
@@ -27,9 +27,8 @@
     "exclude": [
       "node_modules",
       "src/.internal",
-      "test",
-      "src/isSymbol.js"
-    ]
+      "test"
+  ]
   },
   "dependencies": {
     "c8": "^8.0.1"
